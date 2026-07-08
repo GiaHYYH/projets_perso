@@ -1,5 +1,0 @@
-fastapi==0.139.0
-passlib==1.7.4
-psycopg==3.3.4
-python-dotenv==1.2.2
-uvicorn==0.50.2
