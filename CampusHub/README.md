@@ -9,6 +9,7 @@ Permet aux étudiants de centraliser toutes choses pour leurs devoirs et révisi
 - fastapi == 0.139.0
 - passlib == 1.7.4
 - psycopg == 3.3.4
+- python-dotenv == 1.2.2
 - uvicorn == 0.50.2
 
 
@@ -29,6 +30,6 @@ Les suppressions utilisent `ON DELETE CASCADE` lorsque cela correspond aux règl
 
 ## backend
 
-server.py est le point d'entrée du backend de CampusHub. Il initialise l'application FastAPI et assemble les différents composants du projet.
+`server.py` est le point d'entrée du backend de CampusHub. Il initialise l'application FastAPI et assemble les différents composants du projet.
 
-database.py est responsable de toute la communication entre le backend Python et PostgreSQL.
+`database.py` est responsable de toute la communication entre le backend Python et PostgreSQL.
