@@ -1,15 +1,14 @@
-# CAMPUSHUB
+CAMPUSHUB
 
 Projet créer par Georgia Eraste.
 
 Permet aux étudiants de centraliser toutes choses pour leurs devoirs et révisions sur un compte personnel. Les étudiants pourront, avec un compte, gérer leurs matières, les tâches qu’ils doivent compléter (tels que créer des fiches de révisions, des projets/devoirs à faire, etc.), et compléter leur calendrier.
 
 
-## Installations nécessaires
+## Installations nécessairesannotated-doc==0.0.4
 - fastapi == 0.139.0
 - passlib == 1.7.4
 - psycopg == 3.3.4
-- python-dotenv == 1.2.2
 - uvicorn == 0.50.2
 
 
@@ -30,6 +29,15 @@ Les suppressions utilisent `ON DELETE CASCADE` lorsque cela correspond aux règl
 
 ## backend
 
-`server.py` est le point d'entrée du backend de CampusHub. Il initialise l'application FastAPI et assemble les différents composants du projet.
+server.py est le point d'entrée du backend de CampusHub. Il créer l'application FastAPI et assemble les différents composants du projet, tel que l'enregistrement des routes.
 
-`database.py` est responsable de toute la communication entre le backend Python et PostgreSQL.
+database.py est responsable de toute la communication entre le backend Python et PostgreSQL.
+
+models.py permet de définir les modèles Pydantic, permettant notamment la validation des données.
+
+utilisateurs.py contient toutes les routes qui concernent les utilisateurs.
+
+matieres.py contient toutes les routes qui concernent les matières.
+
+taches.py contient toutes les routes qui concernent les tâches.
+
