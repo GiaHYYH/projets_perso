@@ -9,6 +9,8 @@ Permet aux étudiants de centraliser toutes choses pour leurs devoirs et révisi
 - fastapi == 0.139.0
 - passlib == 1.7.4
 - psycopg == 3.3.4
+- PyJWT==2.13.0
+- python-dotenv==1.2.2
 - uvicorn == 0.50.2
 
 
@@ -35,9 +37,12 @@ database.py est responsable de toute la communication entre le backend Python et
 
 models.py permet de définir les modèles Pydantic, permettant notamment la validation des données.
 
-utilisateurs.py contient toutes les routes qui concernent les utilisateurs.
+utilisateurs.py contient toutes les routes qui concernent les utilisateurs. Concerne notamment l'inscription et la connexion d'un compte.
 
 matieres.py contient toutes les routes qui concernent les matières.
 
 taches.py contient toutes les routes qui concernent les tâches.
 
+auth.py permet de créer et de valider des "jetons", ou JWT.
+
+dependencies.py permet de gérer l'utilisateur connecté.
