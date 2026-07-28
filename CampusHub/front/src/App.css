@@ -1,0 +1,115 @@
+h1 {
+    color: #2c3e50;
+}
+
+p {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6fa;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.liste-cartes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.carte-matiere {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pastille-couleur {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.carte-tache {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.carte-tache h3 {
+    margin-top: 0;
+}
+
+.dashboard-cartes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard-carte {
+    background-color: white;
+    width: 180px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: columns;
+    gap: 10px;
+}
+
+.dashboard-carte strong {
+    font-size: 32px;
+}
+
+.profil-carte {
+    background: white;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+
+}
+
+.profil-carte p {
+    margin: 15px 0;
+}
+
+.liste-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.dashboard-ligne {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.zone-danger {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.carte-evenement {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
